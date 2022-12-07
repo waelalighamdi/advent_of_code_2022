@@ -4,9 +4,9 @@ import java.io.File
 
 fun day3Part1(input: List<String>) {
     val sumPriorities = input.sumOf { rucksack ->
-        val compartments = rucksack.chunked(rucksack.length/2)
+        val compartments = rucksack.chunked(rucksack.length / 2)
         val itemType = compartments.first().toSet().intersect(compartments.last().toSet())
-        when(itemType.first()) {
+        when (itemType.first()) {
             in 'a'..'z' -> itemType.first() - 'a' + 1
             in 'A'..'Z' -> itemType.first() - 'A' + 27
             else -> 0
@@ -16,7 +16,15 @@ fun day3Part1(input: List<String>) {
 }
 
 fun day3Part2(input: List<String>) {
-
+    val sumPriorities = input.chunked(3).sumOf { rucksacks ->
+        val itemType = rucksacks.first().toSet().intersect(rucksacks[1].toSet()).intersect(rucksacks.last().toSet())
+        when (itemType.first()) {
+            in 'a'..'z' -> itemType.first() - 'a' + 1
+            in 'A'..'Z' -> itemType.first() - 'A' + 27
+            else -> 0
+        }
+    }
+    println(sumPriorities)
 }
 
 fun day3() {
@@ -27,4 +35,5 @@ fun day3() {
     val input = File(basePath, fileName).readLines()
     println(input)
     day3Part1(input)
+    day3Part2(input)
 }
