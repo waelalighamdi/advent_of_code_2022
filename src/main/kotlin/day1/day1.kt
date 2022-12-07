@@ -37,6 +37,7 @@ fun day1Part2(input: List<String>) {
 
 fun day1() {
     val basePath = "src/main/kotlin/day1"
+    val fileTestName = "test_input.txt"
     val fileName = "input.txt"
 
     val input = File(basePath, fileName).readLines()
