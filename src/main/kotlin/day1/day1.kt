@@ -40,7 +40,7 @@ fun day1() {
     val fileTestName = "test_input.txt"
     val fileName = "input.txt"
 
-    val input = File(basePath, fileName).readLines()
+    val input = File(basePath, fileTestName).readLines()
     day1Part1(input)
     day1Part2(input)
 }
