@@ -2,11 +2,11 @@ package day1
 
 import java.io.File
 
-fun day1Part1(input: List<String>) {
+fun day1Part1(caloriesInput: List<String>) {
     var mostCalories = 0
     var calories = 0
 
-    for (calorie in input) {
+    for (calorie in caloriesInput) {
         if (calorie.isNotBlank()) {
             calories += calorie.toInt()
         } else {
@@ -18,11 +18,11 @@ fun day1Part1(input: List<String>) {
     println(mostCalories)
 }
 
-fun day1Part2(input: List<String>) {
+fun day1Part2(caloriesInput: List<String>) {
     // I am trying a different approach to resolve part2
     val elves = mutableListOf<List<Int>>()
     var elf = mutableListOf<Int>()
-    for (calorie in input) {
+    for (calorie in caloriesInput) {
         if (calorie.isNotBlank()) {
             elf.add(calorie.toInt())
         } else {

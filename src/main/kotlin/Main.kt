@@ -8,8 +8,8 @@ import day5.day5
 fun main() {
     println("Hello to Advent of Code - 2022!")
 
-//    println("--- Day 1: Calorie Counting ---")
-//    day1()
+    println("--- Day 1: Calorie Counting ---")
+    day1()
 //
 //    println("--- Day 2: Rock Paper Scissors ---")
 //    day2()
@@ -20,6 +20,6 @@ fun main() {
 //    println("--- Day 4: Camp Cleanup ---")
 //    day4()
 
-    println("--- Day 5: Supply Stacks ---")
-    day5()
+//    println("--- Day 5: Supply Stacks ---")
+//    day5()
 }
