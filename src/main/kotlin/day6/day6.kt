@@ -19,7 +19,7 @@ fun day6Part2(input: List<String>) {
     val markerIndex = input.first().windowed(14).indexOfFirst { packet ->
         packet.toSet().size == packet.length
     } + 14
-    println("---------> Part1")
+    println("---------> Part2")
     println(dataStream)
     println(markerIndex)
 }
@@ -30,7 +30,6 @@ fun day6() {
     val fileName = "input.txt"
 
     val input = File(basePath, fileName).readLines()
-    println("---------> Part2")
     println(input)
     day6Part1(input)
     day6Part2(input)
