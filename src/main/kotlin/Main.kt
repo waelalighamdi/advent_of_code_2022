@@ -5,6 +5,7 @@ import day4.day4
 import day5.day5
 import day6.day6
 import day7.day7
+import day8.day8
 
 
 fun main() {
@@ -28,7 +29,9 @@ fun main() {
 //    println("--- Day 6: Tuning Trouble ---")
 //    day6()
 
-    println("--- Day 7: No Space Left On Device ---")
-    day7()
+//    println("--- Day 7: No Space Left On Device ---")
+//    day7()
 
+    println("--- Day 8: Treetop Tree House ---")
+    day8()
 }
